@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        background-color: rgb(72, 72, 217);
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 100px;
+        right: 100px;
+
+        animation-name: movingbox;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+        animation-duration: 10s;
+        animation-fill-mode: forwards;
+      }
+      @-webkit-keyframes movingbox {
+        0% {
+          left: 200px;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>box</div>
+  </body>
+</html>
