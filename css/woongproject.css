@@ -1,0 +1,23 @@
+
+.login-wrep{
+    width:200px;
+    color:blanchedalmond;
+    text-align: center;
+    margin: 30px ;
+    float:right;
+}
+
+.input, .login-button{
+    width:100%;
+    margin:5px  5px; 
+    padding:5px; 
+}
+
+.login-button{
+    background-color: rgb(194, 202, 241);
+    width:50%;
+    color:white;
+    border:5px solid rgb(70, 131, 211);
+
+
+}
