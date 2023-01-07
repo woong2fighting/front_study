@@ -5,7 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>responsive_emRem html</title>
-    <link rel="stylesheet" href="css/responsive_emRem.css" />
+    <style>
+      #a{
+        font-size:1em
+      }
+
+      #b{
+        font-size:2em
+      }
+    
+      #box-rem{
+        font-size:10px;
+        width:10rem;
+        height:100px;
+        background-color:red;
+      }
+
+      #box-em{
+        font-size:10px;
+        width:10em;
+        height:100px;
+        background-color:yellow;
+      }
+
+    </style>
   </head>
   <body>
     <!-- 가변단위 em rem:  박스에서 텍스트 크기를 조정할 때 사용하는 상대적인 단위
@@ -13,11 +36,11 @@
   2) rem: 최상단 root요소= <html>요소 font-size를 기준 = 16px; -->
 
     <div style="font-size: 30px">
-      <p id="a">자식요소에 1em 글꼴크기:</p>
-      <p id="b">자식요소에 2em 글꼴크기:</p>
+      <p id="a">자식요소에 1em 글꼴크기 : 1*30px = 30px</p>
+      <p id="b">자식요소에 2em 글꼴크기: 2*30px = 60px</p>
     </div>
 
     <div id="box-em">em:width 100px (10*10px)</div>
-    <div id="box-rem">rem:160px (10*16px)</div>
+    <div id="box-rem">rem:160px (10*html 16px)</div>
   </body>
 </html>
